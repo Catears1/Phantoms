@@ -20,15 +20,17 @@ function draw() {
   img.size(300,200);  
   
   if (keyIsPressed) {
-   if (key === 'd') {
+   if (key === 'd' && imgX <= 1075) {
     imgX +=5; 
-   }  else if (key === 'a') {
+   } else if (key === 'a' && imgX >= -100) {
      imgX -= 5;
-   } else if (key === 'w') {
+   } else if (key === 'w' && imgY >= -10) {
      imgY -= 5; 
-   } else if (key === 's') {
+   } else if (key === 's' && imgY <= 515) {
      imgY +=5; 
    }
+
+
   }  
 
 }
